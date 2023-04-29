@@ -10,7 +10,7 @@ class Price():
             price_ele = soup.find('span', {'class': 'strong___1JlBD priceDown___2TbRQ'})
             if price_ele:
                 price = price_ele.text
-                return {"price":price}
+                return price
             else:
                 return None
         except:
